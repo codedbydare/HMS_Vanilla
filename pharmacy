@@ -2,7 +2,6 @@
 int main()
 {
     int choice;
-    printf("Choose your pharmacy:\n");
     scanf("%d", &choice);
     switch(choice)
     {
