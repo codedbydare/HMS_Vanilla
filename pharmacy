@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int choice;
+    printf("Choose your pharmacy:\n");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+            printf("Create medicine module \n");
+            break;
+        case 2:
+            printf("Update medicine module \n");
+            break;
+        case 3:
+            printf("List  medicine module \n");
+            break;
+        case 4:
+            printf("Delete medicine module \n");
+            break;
+        default:
+            printf("Invalid choice.\n");
+    }
+
+    return 0;
+}
