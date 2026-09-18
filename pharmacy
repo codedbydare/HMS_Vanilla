@@ -3,10 +3,10 @@ int main()
 {
     int choice;
     printf("Choose your  option:\n");
-    printf("Create medicine module \n");
-    printf("Update medicine module \n");
-    printf("List  medicine module \n");
-    printf("Delete medicine module \n");
+    printf("1.Create medicine module \n");
+    printf("2.Update medicine module \n");
+    printf("3.List  medicine module \n");
+    printf("4.Delete medicine module \n");
     scanf("%d", &choice);
     switch(choice)
     {
