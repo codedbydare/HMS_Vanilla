@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int choice,medicineId,price,quantity;
+    int choice,medicineId,quantity;
+    float price;
     char medicineName[50];
     printf("Choose your  option:\n");
     printf("1.Create medicine module \n");
@@ -29,7 +30,7 @@ int main()
             printf("\nMedicine created successfully!\n");
             printf("Medicine ID: %d\n", medicineId);
             printf("Medicine Name: %s\n", medicineName);
-            printf("Medicine Price: %.2f\n", price);
+            printf("Medicine Price: %f\n", price);
             printf("Medicine Quantity: %d\n", quantity);
             break;
         case 2:
@@ -50,12 +51,18 @@ int main()
             printf("\nMedicine updated successfully!\n");
             printf("Medicine ID: %d\n", medicineId);
             printf("Medicine Name: %s\n", medicineName);
-            printf("Medicine Price: %.2f\n", price);
+            printf("Medicine Price: %f\n", price);
             printf("Medicine Quantity: %d\n", quantity);
 
             break;
         case 3:
             printf("\nList Medicines\n");
+
+            printf("Medicine ID: %d\n", medicineId);
+            printf("Medicine Name: %s\n", medicineName);
+            printf("Medicine Price: %f\n", price);
+            printf("Medicine Quantity: %d\n", quantity);
+
             break;
         case 4:
             printf("\nDelete Medicine\n");
