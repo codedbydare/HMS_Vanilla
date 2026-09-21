@@ -7,7 +7,7 @@ struct Equipment {
 };
 int main() {
     struct Equipment e[50];
-    int choice,n;
+    int choice,n=0;
     do{
         printf("\n=================== Equipment Management System ===================\n");
         printf("1. Add Equipment\n");
@@ -25,13 +25,13 @@ int main() {
             scanf("%d", &n);
             for(int i = 0; i < n; i++) {
                 printf("Enter item name: ");
-                scanf("%s", e.item);
+                scanf("%s", e[i].item);
                 printf("Enter item ID: ");
-                scanf("%d", &e.id);
+                scanf("%d", &e[i].id);
                 printf("Enter quantity: ");
-                scanf("%d", &e.quantity);
+                scanf("%d", &e[i].quantity);
                 printf("Enter expiry date (YYYY-MM-DD): ");
-                scanf("%s", e.expiry_date);
+                scanf("%s", e[i].expiry_date);
             }
             break;
         case 2:
