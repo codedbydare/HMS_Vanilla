@@ -34,6 +34,25 @@ int main()
             break;
         case 2:
             printf("\nUpdate Medicine\n");
+
+            printf("Enter Medicine ID: ");
+            scanf("%d", &medicineId);
+
+            printf("Enter New Medicine Name: ");
+            scanf("%s", medicineName);
+
+            printf("Enter New Medicine Price: ");
+            scanf("%f", &price);
+
+            printf("Enter New Medicine Quantity: ");
+            scanf("%d", &quantity);
+
+            printf("\nMedicine updated successfully!\n");
+            printf("Medicine ID: %d\n", medicineId);
+            printf("Medicine Name: %s\n", medicineName);
+            printf("Medicine Price: %.2f\n", price);
+            printf("Medicine Quantity: %d\n", quantity);
+
             break;
         case 3:
             printf("\nList Medicines\n");
