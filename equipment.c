@@ -34,6 +34,11 @@ int main() {
                 scanf("%s", e.expiry_date);
             }
             break;
+        case 2:
+            printf("%s\t%s\t%s\t%s\n", "Item Name", "Item ID", "Quantity", "Expiry Date");
+            printf("%s\t%d\t%d\t%s\n", e.item, e.id, e.quantity, e.expiry_date);
+            break;
+        case 3:
         
         default:
             break;
