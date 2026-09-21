@@ -21,7 +21,16 @@ int main() {
         switch (choice)
         {
         case 1:
-            // Add Equipment code
+            for(int i = 0; i < 5; i++) {
+                printf("Enter item name: ");
+                scanf("%s", e.item);
+                printf("Enter item ID: ");
+                scanf("%d", &e.id);
+                printf("Enter quantity: ");
+                scanf("%d", &e.quantity);
+                printf("Enter expiry date (YYYY-MM-DD): ");
+                scanf("%s", e.expiry_date);
+            }
             break;
         
         default:
