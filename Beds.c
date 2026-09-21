@@ -1,6 +1,6 @@
 /*Bed Management Menu*/
 #include<stdio.h>
-int menu() 
+int main() 
 {
     int choice;
     printf("\n\n===Beds Management Menu===\n");
@@ -14,3 +14,4 @@ int menu()
     scanf("%d", &choice);
     return choice;
 }
+
