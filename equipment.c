@@ -7,7 +7,7 @@ struct Equipment {
 };
 int main() {
     struct Equipment e;
-    int choice;
+    int choice,n;
     do{
         printf("\n=================== Equipment Management System ===================\n");
         printf("1. Add Equipment\n");
@@ -21,7 +21,9 @@ int main() {
         switch (choice)
         {
         case 1:
-            for(int i = 0; i < 5; i++) {
+            printf("Enter the number of equipment items to add: ");
+            scanf("%d", &n);
+            for(int i = 0; i < n; i++) {
                 printf("Enter item name: ");
                 scanf("%s", e.item);
                 printf("Enter item ID: ");
